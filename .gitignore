@@ -1,4 +1,7 @@
 .DS_Store
 web/logs/api_access.log
-
+web/title_box/*
 .zip
+.sql
+.csv
+.sh
