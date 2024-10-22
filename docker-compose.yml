@@ -30,7 +30,7 @@ services:
             - php
  
     pma:
-        image: arm64v8/phpmyadmin
+        image: amd64/phpmyadmin
         environment:
             PMA_HOST: db
             PMA_PORT: 3306
