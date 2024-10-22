@@ -30,13 +30,13 @@ services:
             - php
  
     pma:
-        image: phpmyadmin/phpmyadmin
+        image: arm64v8/phpmyadmin
         environment:
             PMA_HOST: db
             PMA_PORT: 3306
             MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
         ports:
-            - ${IP}:8000:80
+            - ${IP}:8001:80
         links:
             - db:db
 
